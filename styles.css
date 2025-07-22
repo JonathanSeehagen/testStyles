@@ -8,6 +8,11 @@ body {
   font-size: 16px;
 }
 
+.payabliPaymentForm .form-control:focus {
+  border-color: initial !important;
+  box-shadow: none !important;
+}
+
 .cc-form{
   border: none;
 }
