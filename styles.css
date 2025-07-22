@@ -1,56 +1,46 @@
 body {
-  background-color: #f0f0f0 !important;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #000000;
 }
 
 .payabliPaymentForm {
-  padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #000000;
 }
 
 .cc-form{
-    border: none;
+  border: none;
 }
 
 input.component-input-error{
-    border-color: #dc3545!important;
+  border-color: #dc3545!important;
+  border-radius: 50px;
+}
+
+
+.payabliPaymentForm input {
+  border-radius: 50px;
+  font-size: 16px;
 }
 
 /* disabling floating labels */
-
 .payabliPaymentForm label {
-  left: 0;
-  margin-left: 0;
-  padding: 0 !important;
-  top: -25px;
   font-size: 16px;
-  display: block;
-  margin-bottom: 10px;
-  color: #000000;
 }
 
 /* Asterisco vermelho para labels obrigatórios */
-.payabliPaymentForm label[for="cardNumber"]::before,
-.payabliPaymentForm label[for="cardExpirationDate"]::before,
-.payabliPaymentForm label[for="cardCvv"]::before,
-.payabliPaymentForm label[for="cardZipcode"]::before,
-.payabliPaymentForm label[for="achAccountHolderName"]::before,
-.payabliPaymentForm label[for="achAccountType"]::before,
-.payabliPaymentForm label[for="achRouting"]::before,
-.payabliPaymentForm label[for="achAccount"]::before {
+.payabliPaymentForm label[for="cardNumber"]::after,
+.payabliPaymentForm label[for="cardExpirationDate"]::after,
+.payabliPaymentForm label[for="cardCvv"]::after,
+.payabliPaymentForm label[for="cardZipcode"]::after,
+.payabliPaymentForm label[for="achAccountHolderName"]::after,
+.payabliPaymentForm label[for="achAccountType"]::after,
+.payabliPaymentForm label[for="achRouting"]::after,
+.payabliPaymentForm label[for="achAccount"]::after {
   content: "*";
   color: #f04f43;
-  margin-right: 4px;
+  margin-left: 4px;
   font-weight: bold;
-}
-
-.payabliPaymentForm .errorMessageComponent {
-  color: #f04f43;
-  margin-top: 0.25rem;
 }
 
 .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
@@ -69,7 +59,6 @@ input.component-input-error{
 .first-upper.popover-body{
     color: #f04f43;
     margin-top: 0.25rem;
-    font-size: 16px;
 }
 
 h4{
