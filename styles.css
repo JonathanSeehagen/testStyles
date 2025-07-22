@@ -1,115 +1,103 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap";
+
+.payabliPaymentForm {
+  font-size: 0.875rem;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.15;
+  padding: 0 0.25rem;
 }
 
-#payabliComponentsIframeContainerMethodEmbeded iframe {
-  border: solid 1px rgba(255, 255, 255, 0);
-  width: 90%;
+.payabliPaymentForm .row {
+  --bs-gutter-x: 0.5rem;
 }
 
-#embeddedComponentStyle label {
-  font-size: 13px;
-  display: inline-block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #707070;
-  text-transform: uppercase;
-}
-
-#embeddedComponentStyle button {
-  background: #008bce;
-  background-image: -webkit-linear-gradient(0deg, #7121ff 0%, #21d4fd 100%);
-  background-image: -moz-linear-gradient(0deg, #7121ff 0%, #21d4fd 100%);
-  background-image: -ms-linear-gradient(0deg, #7121ff 0%, #21d4fd 100%);
-  border: none;
-  padding: 10px 20px;
-  color: #ffffff;
-  font-size: 13px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
+.payabliPaymentForm .small,
+.payabliPaymentForm small {
   font-size: 12px;
-  padding: 15px 30px;
-  border-radius: 5px;
-  width: 100%;
 }
 
-#embeddedComponentStyle {
-  display: block;
-  width: 500px;
-  margin: 50px auto;
-  border: solid 2px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 25px 25px;
-  background-color: rgb(255, 255, 255);
+.payabliPaymentForm .errorMessageComponent {
+  color: #f04f43;
+  margin-top: 0.25rem;
 }
 
-#embeddedComponentStyle .payment-form {
-  background-color: #f0f0f0;
-  padding: 20px 25px;
-  margin: 0 -25px;
+.payabliPaymentForm label {
+  margin-bottom: 0.5rem;
 }
 
-#embeddedComponentStyle .text-center {
-  text-align: center;
+.payabliPaymentForm label[for=cardNumber]:before,
+.payabliPaymentForm label[for=cardExpirationDate]:before,
+.payabliPaymentForm label[for=cardCvv]:before,
+.payabliPaymentForm label[for=cardZipcode]:before,
+.payabliPaymentForm label[for=achAccountHolderName]:before,
+.payabliPaymentForm label[for=achAccountType]:before,
+.payabliPaymentForm label[for=achRouting]:before,
+.payabliPaymentForm label[for=achAccount]:before {
+  content: "*";
+  color: #f04f43;
 }
 
-#embeddedComponentStyle h4 {
-  color: #707070;
-  font-size: 16px;
-  margin-top: 0px;
+.payabliPaymentForm .form-control {
+  padding: 0.5rem;
+  height: auto;
+  line-height: 1.15;
+  border-radius: 6px;
+  border-color: #d3d3d3;
 }
 
-#embeddedComponentStyle .mt-20 {
-  margin-top: 20px;
+.payabliPaymentForm .form-control:hover {
+  border-color: #2f4ea9;
 }
 
-#embeddedComponentStyle .text-blue {
-  color: #008bce;
+.payabliPaymentForm .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 78, 169, 0.15);
+  border-color: #2f4ea9;
 }
 
-#embeddedComponentStyle button img {
-  vertical-align: middle;
-  width: 17px;
-  height: 17px;
-  opacity: 1;
-  margin-right: 8px;
+.payabliPaymentForm .form-control.input-error {
+  border-color: #f04f43;
 }
 
-#embeddedComponentStyle .tabs {
-  margin: 0 -25px;
+.payabliPaymentForm .input-cc {
+  background-image: none !important;
+  padding-left: 0.5rem !important;
 }
 
-#embeddedComponentStyle .tabs a {
-  color: #707070;
-  text-decoration: none;
-  padding: 0 20px 14px 20px;
-  font-size: 12px;
-  display: inline-block;
-  border-bottom: solid 3px transparent;
-  width: 42%;
-  text-align: center;
-  cursor: pointer;
-}
-
-#embeddedComponentStyle .tabs a.active {
-  color: #008bce;
-  border-bottom: solid 3px #008bce;
-}
-
-#embeddedComponentStyle .input-checkbox {
-  vertical-align: middle;
-  width: 22px;
-  height: 22px;
-  color: rgb(12, 96, 188);
-}
-
-#embeddedComponentStyle .payment-info {
-  border-bottom: solid 1px rgb(230, 230, 230);
-  padding: 14px 0 10px 0;
-  margin: 0 -25px;
-}
-
-iframe {
-  border: solid 1px transparent;
+@media (max-width: 440px) {
+  .payabliPaymentForm .fullw-440.col-1 {
+    width: 8.3333333333% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-2 {
+    width: 16.6666666667% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-3 {
+    width: 25% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-4 {
+    width: 33.3333333333% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-5 {
+    width: 41.6666666667% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-6 {
+    width: 50% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-7 {
+    width: 58.3333333333% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-8 {
+    width: 66.6666666667% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-9 {
+    width: 75% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-10 {
+    width: 83.3333333333% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-11 {
+    width: 91.6666666667% !important;
+  }
+  .payabliPaymentForm .fullw-440.col-12 {
+    width: 100% !important;
+  }
 }
