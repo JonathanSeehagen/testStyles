@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 body {
   background-color: #f0f0f0 !important;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #000000;
 }
 
 .payabliPaymentForm {
   padding: 0px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #000000;
 }
@@ -50,6 +48,11 @@ input.component-input-error{
   font-weight: bold;
 }
 
+.payabliPaymentForm .errorMessageComponent {
+  color: #f04f43;
+  margin-top: 0.25rem;
+}
+
 .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
     opacity: 1;
     transform: none;
@@ -64,9 +67,11 @@ input.component-input-error{
 }
 
 .first-upper.popover-body{
-    font-size: 11px;
+    font-size: 20px;
 }
 
 h4{
     font-size: 20px;
 }
+
+
