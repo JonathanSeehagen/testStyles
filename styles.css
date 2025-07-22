@@ -67,7 +67,9 @@ input.component-input-error{
 }
 
 .first-upper.popover-body{
-    font-size: 20px;
+    color: #f04f43;
+    margin-top: 0.25rem;
+    font-size: 16px;
 }
 
 h4{
