@@ -1,103 +1,51 @@
-@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap";
+body {
+    background-color: #f0f0f0!important;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .payabliPaymentForm {
-  font-size: 0.875rem;
-  font-family: "Manrope", sans-serif;
-  line-height: 1.15;
-  padding: 0 0.25rem;
+    padding:0px;
 }
 
-.payabliPaymentForm .row {
-  --bs-gutter-x: 0.5rem;
+.cc-form{
+    border: none;
+   
 }
 
-.payabliPaymentForm .small,
-.payabliPaymentForm small {
-  font-size: 12px;
+input.component-input-error{
+    border-color: #dc3545!important;
 }
 
-.payabliPaymentForm .errorMessageComponent {
-  color: #f04f43;
-  margin-top: 0.25rem;
-}
+/* disabling floating labels */
 
 .payabliPaymentForm label {
-  margin-bottom: 0.5rem;
+    left: 0;
+    margin-left: 0;
+    padding: 0 !important;
+    top: -25px;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+    color: #727272;
 }
 
-.payabliPaymentForm label[for=cardNumber]:before,
-.payabliPaymentForm label[for=cardExpirationDate]:before,
-.payabliPaymentForm label[for=cardCvv]:before,
-.payabliPaymentForm label[for=cardZipcode]:before,
-.payabliPaymentForm label[for=achAccountHolderName]:before,
-.payabliPaymentForm label[for=achAccountType]:before,
-.payabliPaymentForm label[for=achRouting]:before,
-.payabliPaymentForm label[for=achAccount]:before {
-  content: "*";
-  color: #f04f43;
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    opacity: 1;
+    transform: none;
 }
 
-.payabliPaymentForm .form-control {
-  padding: 0.5rem;
-  height: auto;
-  line-height: 1.15;
-  border-radius: 6px;
-  border-color: #d3d3d3;
+.cardNumberContainer input{
+    padding: 10px 10px 10px 45px!important;
 }
 
-.payabliPaymentForm .form-control:hover {
-  border-color: #2f4ea9;
+#main-loading-layer{
+    background-color: transparent!important;
 }
 
-.payabliPaymentForm .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(47, 78, 169, 0.15);
-  border-color: #2f4ea9;
+.first-upper.popover-body{
+    font-size: 11px;
 }
 
-.payabliPaymentForm .form-control.input-error {
-  border-color: #f04f43;
-}
-
-.payabliPaymentForm .input-cc {
-  background-image: none !important;
-  padding-left: 0.5rem !important;
-}
-
-@media (max-width: 440px) {
-  .payabliPaymentForm .fullw-440.col-1 {
-    width: 8.3333333333% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-2 {
-    width: 16.6666666667% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-3 {
-    width: 25% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-4 {
-    width: 33.3333333333% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-5 {
-    width: 41.6666666667% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-6 {
-    width: 50% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-7 {
-    width: 58.3333333333% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-8 {
-    width: 66.6666666667% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-9 {
-    width: 75% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-10 {
-    width: 83.3333333333% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-11 {
-    width: 91.6666666667% !important;
-  }
-  .payabliPaymentForm .fullw-440.col-12 {
-    width: 100% !important;
-  }
+h4{
+    font-size: 20px;
 }
