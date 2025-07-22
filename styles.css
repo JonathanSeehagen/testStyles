@@ -29,6 +29,21 @@ input.component-input-error{
     color: #727272;
 }
 
+/* Asterisco vermelho para labels obrigatórios */
+.payabliPaymentForm label[for="cardNumber"]::before,
+.payabliPaymentForm label[for="cardExpirationDate"]::before,
+.payabliPaymentForm label[for="cardCvv"]::before,
+.payabliPaymentForm label[for="cardZipcode"]::before,
+.payabliPaymentForm label[for="achAccountHolderName"]::before,
+.payabliPaymentForm label[for="achAccountType"]::before,
+.payabliPaymentForm label[for="achRouting"]::before,
+.payabliPaymentForm label[for="achAccount"]::before {
+  content: "*";
+  color: #f04f43;
+  margin-right: 4px;
+  font-weight: bold;
+}
+
 .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
     opacity: 1;
     transform: none;
